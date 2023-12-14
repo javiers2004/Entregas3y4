@@ -16,7 +16,6 @@ public class Mejorcompra {
 		precios2.add(10);
 		precios2.add(13);
 		precios2.add(200);
-		precios2.add(3);
 		mejorCompraSinRepetir(800, precios2, new LinkedList<Integer>());
 	}
 	
