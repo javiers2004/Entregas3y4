@@ -13,9 +13,10 @@ public class Mejorcompra {
 		precios2.add(76);
 		precios2.add(112);
 		precios2.add(200);
-		precios2.add(200);
 		precios2.add(10);
 		precios2.add(13);
+		precios2.add(200);
+		precios2.add(3);
 		mejorCompraSinRepetir(800, precios2, new LinkedList<Integer>());
 	}
 	
@@ -46,7 +47,7 @@ public class Mejorcompra {
 	}
 	
 	public static void mejorCompraSinRepetir(int dineroRestante, ArrayList<Integer> precios, LinkedList<Integer> listaCompras) {
-		if(dineroRestante == 0 && dineroRestante < mejorDineroRestante2 && listaCompras.size() > 0) {
+		if(dineroRestante == 0 && dineroRestante < mejorDineroRestante2) {
 			System.out.println("Mejor compra posible es" + listaCompras);
 			mejorDineroRestante2 = 0;
 			System.out.println(dineroRestante);
